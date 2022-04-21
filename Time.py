@@ -8,17 +8,17 @@ class Time:
        self.second=s
 
     def add(self):
-        if m+s>60 :
+        if self.minute +self.second:
             print(" error bishtar az 60 min ")
     def sub(self):
-        if m-s <0 :
+        if self.minute -self.second <0 :
             print(" error kamtar az 0 ")
     def s_to_h(self):
-       h= s/3600
-       m=s/60
+      self.hour= self.second/3600
+      self.minute=s/60
     def h_to_s(self):
-        s=h*3600
-        s=m*60
+        s= self.hour*3600
+        s=self.minute*60
 test=Time(5,33,20)
 test.add()
 test.sub()
